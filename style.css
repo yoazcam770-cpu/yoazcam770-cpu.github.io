@@ -1,5 +1,5 @@
 /* בטעם המקרא – האתר הראשי
-   שפת העיצוב של דף הקורס (נייבי, זהב, קרם, Frank Ruhl Libre + Heebo),
+   שפת העיצוב של דף הקורס (נייבי, זהב, קרם, Rubik),
    במבנה ובמוקפדות של אתר מקצועי: פס עליון כהה עם לשוניות, פתיחה עם צילום על כל המסך, רקע נייר חם. */
 
 :root {
@@ -22,8 +22,8 @@
   --line-soft: #e6dcc6;
   --shadow: 0 18px 40px -22px rgba(13, 29, 63, .35);
   --shadow-lg: 0 30px 70px -30px rgba(7, 20, 46, .55);
-  --serif: 'Frank Ruhl Libre', serif;
-  --sans: 'Heebo', system-ui, sans-serif;
+  --serif: 'Rubik', system-ui, sans-serif;
+  --sans: 'Rubik', system-ui, sans-serif;
   --r: 18px;
   --hdr: 74px;
 }
