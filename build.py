@@ -4,7 +4,7 @@ import json, re, html, os
 from urllib.parse import quote
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
-SITE_URL = 'https://yoazcam770-cpu.github.io/'  # כשהאתר יעלה לאוויר: הכתובת המלאה, למשל https://example.github.io/  (משמש לקישור הקנוני ולגוגל)
+SITE_URL = 'https://yoazcampbell.com/'  # כשהאתר יעלה לאוויר: הכתובת המלאה, למשל https://example.github.io/  (משמש לקישור הקנוני ולגוגל)
 
 WA_NUM = '19294359064'
 WA = f'https://wa.me/{WA_NUM}?text=' + quote('שלום יועז, יש לי שאלה')
