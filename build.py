@@ -171,6 +171,16 @@ def build():
         assert not left, (fn, left)
         open(os.path.join(ROOT, fn), 'w', encoding='utf-8', newline='\n').write(out)
         print('נבנה:', fn)
+    if SITE_URL:
+        import datetime
+        today = datetime.date.today().isoformat()
+        order = ['index.html', 'method.html', 'gift.html', 'haftara.html', 'courses.html', 'yamim-noraim.html', 'ask.html']
+        urls = ''.join(f'  <url><loc>{SITE_URL}{"" if f == "index.html" else f}</loc><lastmod>{today}</lastmod></url>\n' for f in order)
+        open(os.path.join(ROOT, 'sitemap.xml'), 'w', encoding='utf-8', newline='\n').write(
+            '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + urls + '</urlset>\n')
+        open(os.path.join(ROOT, 'robots.txt'), 'w', encoding='utf-8', newline='\n').write(
+            f'User-agent: *\nDisallow: /admin/\n\nSitemap: {SITE_URL}sitemap.xml\n')
+        print('נבנה: sitemap.xml, robots.txt')
 
 
 if __name__ == '__main__':
