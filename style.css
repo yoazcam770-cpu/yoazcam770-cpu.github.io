@@ -578,3 +578,10 @@ h1 em, h2 em, h3 em { font-style: normal; color: var(--gold-deep); }
   .hero--split .hero__p, .hero--split .hero__ticks { display: none; }
   .hero--split .hero__in { padding-top: 40px; gap: 28px; }
 }
+
+/* דיסק און קי ליד המחיר בדף הקורס */
+.buy-col { display: grid; grid-template-columns: minmax(0, 1fr); gap: 18px; align-content: start; min-width: 0; }
+.usb--side { grid-template-columns: auto 1fr; margin-top: 0; padding: 20px 22px; gap: 14px 16px; }
+.usb--side .usb__btns { grid-column: 1 / -1; }
+.usb--side .usb__btns .btn { flex: 1; }
+@media (max-width: 720px) { .usb--side { grid-template-columns: 1fr; } }
